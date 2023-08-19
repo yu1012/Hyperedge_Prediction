@@ -19,5 +19,5 @@ python train.py --dataset [data_name] --split [data_split] --gpu [gpu_id] --epoc
 
 To evaluate MHP,
 ```
-python eval.py --dataset [data_name] --split [data_split] --gpu [gpu_id] --epochs [num_epochs]
+python eval.py --dataset [data_name] --split [data_split] --gpu [gpu_id]
 ```
