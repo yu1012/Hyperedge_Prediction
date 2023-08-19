@@ -66,15 +66,15 @@ class MeanAggregator(nn.Module):
         return embedding
 
 class MeanMLPAggregator(nn.Module):
-    def __init__(self, dim_vertex):
+    def __init__(self, dim_vertex, dim_hid):
         super(MeanMLPAggregator, self).__init__()
-        self.lin = nn.Linear(dim_vertex, dim_vertex)
-        self.lin2 = nn.Linear(dim_vertex, dim_vertex)
+        self.lin = nn.Linear(dim_vertex, dim_hid)
+        self.lin2 = nn.Linear(dim_hid, 1)
         
     def forward(self, embeddings):
-        embedding = torch.mean(embeddings, dim=1)
-        embedding = F.dropout(F.relu(self.lin(embedding)), p=0.3)
-        embedding = self.lin2(embedding)
+        embedding = torch.mean(embeddings, dim=0)
+        embedding = F.dropout(F.relu(self.lin(embedding)), p=0.2)
+        embedding = F.sigmoid(self.lin2(embedding))
         
         return embedding
 
