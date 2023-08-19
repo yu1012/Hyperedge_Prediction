@@ -106,9 +106,9 @@ with torch.no_grad():
     test_pos = [set(hedge) for hedge in test_pos]
     ground = [set(hedge) for hedge in ground]
 
-    test_set = torch.load(f'../hypergraph_data/generations/one/{args.dataset}split{args.split}_generate.pt')
-    # test_set = torch.load(f'../hypergraph_data/generations/two/{args.dataset}split{args.split}_generate.pt')
-    # test_set = torch.load(f'../hypergraph_data/generations/half/{args.dataset}split{args.split}_generate.pt')
+    test_set = torch.load(f'../hypergraph_data/evaluation/one/{args.dataset}split{args.split}_generate.pt')
+    # test_set = torch.load(f'../hypergraph_data/evaluation/two/{args.dataset}split{args.split}_generate.pt')
+    # test_set = torch.load(f'../hypergraph_data/evaluation/half/{args.dataset}split{args.split}_generate.pt')
 
     def eval(test_dataset):
         preds = []
