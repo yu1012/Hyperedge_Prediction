@@ -1,9 +1,8 @@
 # Hyperedge_Prediction
-
-[Project Description: Provide a brief overview of your project and its main goals. Mention what hyperedge prediction is and why it's important.]
+This is a repository of `MHP`, which is submitted to AAAI 2024.
 
 ## Data
-Make a `hypergrad_data` directory outside the current directory, and copy files from the 
+Make a `hypergraph_data` directory outside the current directory, and copy files from the 
 https://drive.google.com/drive/folders/1yASDHE-9tD0byFgul22azmN9vZw_Jw_X?usp=sharing
 
 ## Installation
