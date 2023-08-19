@@ -1,4 +1,4 @@
-# Hyperedge_Prediction
+# MHP
 This is a repository of `MHP`, which is submitted to AAAI 2024.
 
 ## Data
