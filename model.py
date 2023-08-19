@@ -9,6 +9,8 @@ from utils import *
 
 from torch_scatter import scatter
 
+""" adapted from https://github.com/iMoonLab/HGNN.git """
+
 
 class HGNN_conv(nn.Module):
     def __init__(self, in_ft, out_ft, bias=True):
