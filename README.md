@@ -1,5 +1,5 @@
 # MHP
-This is a repository of `MHP`, which is submitted to AAAI 2024.
+This is a repository of `MHP`.
 
 ## Data
 Make a `hypergraph_data` directory outside the current directory, and copy files from the 
