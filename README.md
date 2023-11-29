@@ -2,8 +2,7 @@
 This is a repository of `MHP`.
 
 ## Data
-Make a `hypergraph_data` directory outside the current directory, and copy files from the 
-https://drive.google.com/drive/folders/1yASDHE-9tD0byFgul22azmN9vZw_Jw_X?usp=sharing
+Make a `hypergraph_data` directory outside the current directory, and copy and unzip data.zip there.
 
 ## Installation
 We implemented MHP with python 3.9. To install packages, run the shell code below.
